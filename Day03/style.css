@@ -1,0 +1,15 @@
+h3{
+    color: aqua;
+    text-align: center;
+    text-decoration:underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: thistle;
+}
+p{
+    text-align: justify;
+    color: blue;
+}
+h4{
+    color: red;
+    text-align: center;
+}
