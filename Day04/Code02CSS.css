@@ -1,0 +1,23 @@
+*{
+    background-color: aqua;
+}
+h2{
+    color: red;
+}
+#ol5{
+    color: darkgoldenrod;
+}
+.change{
+    color: salmon;
+}
+ul{
+    /* list-style-image: url("/Images/moon.jpg"); */
+    /* padding-left: 5px;
+    padding-top: 0%; */
+}
+.child ul li{
+    color: azure;
+}
+.directChild ul > li{
+    color: brown;
+}

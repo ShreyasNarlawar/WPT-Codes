@@ -1,0 +1,47 @@
+*{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/678/288/941/moon-universe-night-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div{
+    margin: 15px;
+    height: fit-content;
+}
+div > div{
+    margin: -17px;
+    padding-top: 15px;
+    margin-right: -10px;
+    color: azure;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li > a{
+    color: azure;
+    text-decoration: none;
+    margin: 15px;
+}
+li{
+    display: inline;
+    margin: 15px; 
+}
+body{
+    margin-top: 1%;
+    text-align: center;
+}
+span{
+    color: rgb(245, 168, 15);
+    margin-right: 700px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    margin-left: 300px;
+}
+h1{
+     
+    align-items: center;
+    text-align: center;
+    margin-top: -33%;
+    color: azure;
+    font-size: xx-large;
+}

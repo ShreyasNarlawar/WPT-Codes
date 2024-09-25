@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17</title>
+</head>
+<body>
+    
+
+    <label>Number 1</label> <br>
+	<input type="number" id="Num1"> <br>
+	<label>Number 2</label> <br>
+	<input type="number" id="Num2"> <br>
+
+    <br>
+	<button onclick="multiply()"> Multiply </button>
+	<br>
+	<output id="op"></output>
+	
+	<script>
+	  function multiply()
+	  {
+	    let o, p, res; 
+	    o = +Num1.value;	 // parsing using + operator
+		p = +Num2.value;
+		result = o * p;
+		op.value="Multiplication  is "+result;		
+	  }	
+	</script>  
+
+</body>
+</html>

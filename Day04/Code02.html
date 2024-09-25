@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Selectors</title>
+    <link rel="stylesheet" href="Code02CSS.css">
+</head>
+<body>
+    <h2>
+        Universal Selector
+    </h2>
+    <ul type ="dot">
+        <li>
+            It is applicable to all elements and tags including html and head tag 
+        </li>
+        <li>
+            It is denoted by using "*" symbol
+        </li>
+        <li>
+            It is also called as global style
+        </li>
+        <li>
+            For Exapmle taking Background as Aqua
+        </li>
+    </ul>
+
+    <h2>
+        Tag Selector
+    </h2>
+    <ul type = "circle">
+        <li>
+            It is applicable to only selected tags those you want to apply styles
+        </li>
+        <li>
+            Same style is applied to all same tag elements usig tag selector
+        </li>
+        <li>
+            All Headings are colored with red are by using tag selector
+        </li>
+    </ul>
+
+    <h2>
+        Id Selector
+    </h2>
+    <ul type ="square">
+        <li id="ol5">
+            It is used to apply specific style to specific element then we use id selector
+        </li>
+        <li>
+            In this, we use a specific and unique id to style the tag and elements
+        </li>
+        <li>
+            We can use a same id to style different element but it is bad practise
+        </li>
+        <li>
+            If we want to make Changes on 1 but due to same id Changes on all tags takes place due to same id so it should be avoided
+        </li>
+        <li>
+            One of the line is different from this is due to id selector
+        </li>
+        <li>
+            It is denoted by using "#" symbol
+        </li>
+    </ul>
+
+    <h2 class="change">
+        Class Selector
+    </h2>
+    <ul type = "disc">
+        <li class="change">
+            Different elements of different tags are styled through class tag
+        </li>
+        <li>
+            It is represented by <b>using "." symbol</b>
+        </li>
+        <li>
+            Different tags are styled with same style using CSS classes
+        </li>
+        <li>
+            Header and one line of this topic is changed using Class selector
+        </li>
+    </ul>
+
+    <h2>
+        Grouping selector
+    </h2>
+    <ul type ="circle">
+        <li>
+            If we want to give same style to more than one tag then we use Grouping selector
+        </li>
+        <li>
+            Grouping selector gives same styles to multiple tags 
+        </li>
+        <li>
+            In this same tag  with different name should be used
+        </li>
+        <li>
+            It is represented by <b>using "," symbol</b>
+        </li>
+    </ul>
+
+    <h2>
+        Child selector
+    </h2>
+    <div class="child">
+      <ul>
+        <li>
+            This is used to style all the childs of parent and grandparent tags
+        </li>
+        <li>
+            By using this we can add more specificity to the tag that we want to style
+        </li>
+        <li>
+            It is represented by <b>using " " or space symbol</b>
+        </li>
+        <li>
+            All of the line from this are colored using this child selector
+        </li>
+      </ul>
+   </div>
+
+   <h2>
+       Direct Child
+   </h2>
+
+   <div class="directChild">
+     <ul>
+       <li>
+        It selects only direct child from parent or grandparent rather than other indirect childs
+       </li>
+       <li>
+        It is used to access only direct child i.e. tag inside tag only
+       </li>
+       <li>
+        It is represented by <b>using ">" symbol</b>
+       </li>
+       <li>
+         All of the line can be changed is due to this direct child selector
+       </li>
+     </ul>
+    </div>
+
+</body>
+</html>

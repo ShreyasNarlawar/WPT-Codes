@@ -1,0 +1,22 @@
+*{
+    background-image: url("/Images/moon.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+
+}
+p{
+
+    /* background-repeat: repeat-x;  horizontally repeat */
+    /* background-repeat: repeat-y;  vertically repeat */
+}
+
+img{
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
