@@ -7,8 +7,8 @@
 </head>
 <body>
     
-    <input type="text" id="firstNum" placeholder="First number"> <br>
-    <input type="text" id="secNum" placeholder="Second number">
+    <input type="text" id="Num1" placeholder="First number"> <br>
+    <input type="text" id="Num2" placeholder="Second number">
     <bR>
     <br>
     <button onclick=" Add()">+</button> <br>
@@ -18,8 +18,62 @@
     <button onclick=" Modulo()">%</button><br>
     <button onclick="Power()">^</button><br>
 
-    <output id="op"></output>
+    <output id="op"> </output>
 
+    <script>
+
+        function Add(){
+            let o, p, result;
+            o = +Num1.value;
+            p = +Num2.value;
+
+            result = o + p;
+            op.value = "Addition is "+ result;
+        }
+
+        function Subtract(){
+            let o, p, result;
+            o = +Num1.value;
+            p = +Num2.value;
+
+            result = o - p;
+            op.value = "Substration is "+ result;
+        }
+        
+        function Multiply(){
+            let o, p, result;
+            o = +Num1.value;
+            p = +Num2.value;
+
+            result = o * p;
+            op.value = "Multiplication is "+ result;
+        }
+        function Divide(){
+            let o, p, result;
+            o = +Num1.value;
+            p = +Num2.value;
+
+            result = o / p;
+            op.value = "Division is "+ result;
+        }
+        function Modulo(){
+            let o, p, result;
+            o = +Num1.value;
+            p = +Num2.value;
+
+            result = o % p;
+            op.value = "Remainder is "+ result;
+        }
+
+        function Power(){
+            let o, p, result;
+            o = +Num1.value;
+            p = +Num2.value;
+
+            result = o ** p;
+            op.value = "Power is "+ result;
+        }
+    </script>
     
 
 </body>
