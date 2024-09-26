@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08</title>
+</head>
+<body>
+
+    <h3>
+        Tutoial on element Object Properties
+    </h3>
+    <img src="/Images/offbulb.jpg" id="img" width="300px" alt="bulb image">
+
+
+    <button onclick="on()" ondblclick="off()">Click</button>
+    
+
+
+
+    <script>
+
+        function on() {
+        
+        const img = document.querySelector("img");
+		img.src=`/Images/onbulb.jpg`;	
+        }
+        
+        function off() {
+        const img = document.querySelector("img");
+		img.src=`/Images/offbulb.jpg`;	
+        }
+    
+
+    </script>
+
+
+</body>
+</html>

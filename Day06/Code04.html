@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+</head>
+<body>
+    
+
+    <h3>
+        DOM : Document Methods using queryselector
+    </h3>
+
+    <h2 id = "r5t">
+        Samsung
+    </h2>
+
+    <span class="ad">Apple</span>
+
+    <div class="ad">Nothing</div>
+
+    <p class="ad">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, libero.
+    </p>
+
+    <script>
+        const sb = document.querySelector("#r5t");
+        document.write(`${sb} <br>`);
+
+        const sbi = document.querySelector(".ad");
+        document.write(`${sbi} <br>`)
+
+        const out = document.querySelectorAll(".ad");
+        document.write(`${out} <br>`)
+    </script>
+</body>
+</html>

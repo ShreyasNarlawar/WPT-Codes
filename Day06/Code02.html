@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+</head>
+<body>
+    
+    <h3>
+            Document Methods
+    </h3>
+
+    <h4 id = "dom">
+        DOM Manipulation
+    </h4>
+
+    <input type="radio" id = "w1" name = "colour"/><label>Red</label>&nbsp;
+    <input type="radio" id = "w2" name = "colour"/><label>Green</label>&nbsp;
+    <input type="radio" id = "w3" name = "colour"/><label>Blue</label>&nbsp;
+
+    <hr>
+    <br>
+    <hr>
+    <script>
+
+        let hob = document.getElementById("dom")
+        document.write(`${hob}<br>`);
+        const rob = document.getElementsByName("colour");
+        document.write(`${rob}<br>`);
+        
+    </script>
+</body>
+</html>

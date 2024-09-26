@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Toggle Tutorial</title>
+</head>
+<body>
+
+    <h3>Tutorial on Element Object Properties</h3>
+    <img src="/Images/offbulb.jpg" id="img" width="300px" alt="bulb image">
+
+    <button id="toggleButton">ON</button>
+
+    <script>
+        const img = document.getElementById("img");
+        const button = document.getElementById("toggleButton");
+
+        let isOn = false;
+
+        button.onclick = function() {
+            if (isOn) {
+                img.src = "/Images/offbulb.jpg";
+                button.textContent = "ON";
+            } else {
+                img.src = "/Images/onbulb.jpg";
+                button.textContent = "OFF";
+            }
+            isOn = !isOn; // Toggle the state
+        };
+    </script>
+
+</body>
+</html>

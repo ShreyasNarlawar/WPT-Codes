@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07</title>
+</head>
+<body>
+
+    <h3>
+        DOM : Element Properties
+    </h3>
+
+    <h2>
+        Hello
+    </h2>
+
+    <button onclick="update()">Change</button>
+
+    <button onclick="document.querySelector(`h2`).innerText =''">Delete</button>
+    
+
+    <hr>
+
+
+    <script>
+
+        function update() {
+
+            const y = document.querySelector(`h2`);
+
+            let a = prompt("enter the name");
+
+            y.innerText = `${a}`;
+
+            y.innerText +=` ${a}`;
+
+            
+        }
+    </script>
+</body>
+</html>

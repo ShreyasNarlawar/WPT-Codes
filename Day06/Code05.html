@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05</title>
+</head>
+<body>
+
+    <h3>
+        DOM Manipulation : Element Properties
+    </h3>
+    
+    <h1 id="heading1">
+        This is Me
+    </h1>
+
+    <input type="text" id="out" name="type" value="1000">
+    <hr>
+
+    <script>
+
+       const ui = document.getElementById("heading1");
+       document.write(`${ui.innerText} <br>`);
+
+       ui.innerText = `This is replacing using innerText`;
+       document.write(`${ui.innerText} <br>`)
+       
+        ui.innerText +=` This is concatination using innerText`;
+        document.write(`${ui.innerText} <br>`);
+
+        document.write(`${document.getElementById("out")} <br>`);
+        document.write(`${out.value} <br>`)
+    </script>
+</body>
+</html>

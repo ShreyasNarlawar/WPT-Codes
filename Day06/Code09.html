@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09</title>
+</head>
+<body>
+    
+
+    <h3>
+        DOM Manipulation : Event Handling
+    </h3>
+
+    <button id="dom1">On</button>
+    <button id="dom2">Out</button>
+
+
+    <script>
+        const b1 = document.querySelector("#dom1");
+
+        // FIRST WAY
+        b1.addEventListener("click", function () {alert("come in")});
+
+
+        const b2 = document.querySelector("#dom2");
+
+        // SECOND WAY
+
+        b2.onclick =function () {alert ("get out")};
+    </script>
+</body>
+</html>
