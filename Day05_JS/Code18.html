@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18</title>
+</head>
+<body>
+    
+    <input type="text" id="Num1" placeholder="First number"> <br>
+    <input type="text" id="Num2" placeholder="Second number">
+    <br>
+    <br>
+    <button onclick=" Add()">+</button> <br>
+    <button onclick=" Subtract()">-</button> <br>
+    <button onclick=" Multiply()">*</button><br>
+    <button onclick=" Divide()">/</button><br>
+    <button onclick=" Modulo()">%</button><br>
+    <button onclick="Power()">^</button><br>
+
+    <output id="op"></output>
+
+    <script>
+        function Add()
+	  {
+	    let o, p, res; 
+	    o = +Num1.value;	 // parsing using + operator
+		p = +Num2.value;
+		result = o + p;
+		op.value="Addition  is "+result;		
+	  }	
+
+      function Subtract()
+	  {
+	    let o, p, res; 
+	    o = +Num1.value;	 // parsing using + operator
+		p = +Num2.value;
+		result = o - p;
+		op.value="Subtraction  is "+result;		
+	  }	
+
+      function Multiply()
+	  {
+	    let o, p, res; 
+	    o = +Num1.value;	 // parsing using + operator
+		p = +Num2.value;
+		result = o * p;
+		op.value="Multiplication  is "+result;		
+	  }
+
+      function Divide()
+	  {
+	    let o, p, res; 
+	    o = +Num1.value;	 // parsing using + operator
+		p = +Num2.value;
+		result = o / p;
+		op.value="Multiplication  is "+result;		
+	  }
+
+      function Modulo()
+	  {
+	    let o, p, res; 
+	    o = +Num1.value;	 // parsing using + operator
+		p = +Num2.value;
+		result = o % p;
+		op.value="Reminder is "+result;		
+	  }
+
+      function Power()
+	  {
+	    let o, p, res; 
+	    o = +Num1.value;	 // parsing using + operator
+		p = +Num2.value;
+		result = o ** p;
+		op.value="Power is "+result;		
+	  }
+      
+    </script>
+
+</body>
+</html>

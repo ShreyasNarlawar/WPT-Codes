@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+</head>
+<body>
+    
+    <h4>
+        Tut on Object Properties
+    </h4>
+
+    <textarea  id="a" row = "10" cols="110"></textarea>
+
+    <br>
+
+   <button id="bold"><b>B</b></button>
+   <button id="em"><em>I</em></button>
+   <button id="ul"><u>U</u></button>
+   <button id="strike"><s>$</s></button>
+   <input type = "color" id ="c" >
+   <button id="left">Left</button>
+   <button id="right">Right</button>
+   <button id="center">Center</button>
+
+   <select id="size">
+   <option value="14">14</option>
+   <option value="15">15</option>
+   <option value="16">16</option>
+   <option value="17">17</option>
+   <option value="18">18</option>
+   <option value="19">19</option>
+   <option value="20">20</option>
+
+   </select>
+
+   <script>
+
+    const a = document.getElementById("a");
+
+    document.querySelector("#bold").onclick = function (){
+        if( a.style.fontWeight === "bold")
+           a.style.fontWeight = "normal";
+        else
+            a.style.fontWeight = "bold";
+    }
+    document.querySelector("#em").onclick = function (){
+        if( a.style.fontStyle === "italic")
+           a.style.fontStyle = "normal";
+        else
+            a.style.fontStyle = "italic";
+    }
+    document.querySelector("#ul").onclick = function (){
+        if( a.style.textDecoration === "underline")
+           a.style.textDecoration = "none";
+        else
+            a.style.textDecoration = "underline";
+    }
+    document.querySelector("#strike").onclick = function (){
+        if( a.style.textDecoration === "line-through")
+           a.style.textDecoration = "none";
+        else
+            a.style.textDecoration = "line-through";
+    }
+    document.querySelector("#c").onchange = function (){
+            a.style.color = "c.value";
+    }
+    document.querySelector("#left").onclick = function (){
+            a.style.textAlign = "left";
+    }
+    document.querySelector("#right").onclick = function (){
+            a.style.textAlign = "right";
+    }
+    document.querySelector("#center").onclick = function (){
+            a.style.textAlign = "center";
+    }
+    document.querySelector("#fs").onchange=function(){
+        a.style.fontSize = `${document.querySelector("#size").value}px`;
+    }
+   </script>
+</body>
+</html>

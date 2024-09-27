@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/4/2e8Ff67vsP9u/7L6BRx7jR3Y3hf1QZJavD6/" 
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+<h1>jQuery Event Handling Demo</h1>
+<button type="button" name="button">Dont Sleep First
+Warning</button>
+<button type="button" name="button">Dont Sleep Second
+Warning</button>
+<button type="button" name="button">Dont Sleep Third
+Warning</button>
+<script type="text/javascript" src='Test03.js'></script>
+</body>
+</html>

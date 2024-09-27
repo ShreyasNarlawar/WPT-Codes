@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>JavaScript tut on Var</h3>
+
+    <script>
+      c = 6;
+
+      function display() {
+        console.log("In the show function value of c is " + c);
+      }
+      display();
+      console.log("Outside of a fucntion value of c is " + c);
+    </script>
+
+    <script>
+      function display() {
+        c = 9;
+        console.log("In the show function value of c is " + c);
+      }
+      display();
+      console.log("Outside of a fucntion value of c is " + c);
+    </script>
+
+    <h3>
+      Conclusion : if a variable has been declared without any of the keyword
+      then it will have global scope
+    </h3>
+
+    <script>
+      var d = 10;
+
+      function display() {
+        console.log("In the show function value of d is " + d);
+      }
+      display();
+      console.log("Outside of a fucntion value of d is " + d);
+
+    </script>
+
+    <script>
+        function display() {
+         var e = 9;
+        console.log("In the show function value of e is " + e);
+      }
+      display();
+    </script>
+
+<script>
+    function display() {
+     let e = 89;
+    console.log("In the show function value of e is " + e);
+  }
+  display();
+
+  const a = 45.78;
+  document.writeln(a);
+
+</script>
+
+
+  </body>
+</html>

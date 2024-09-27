@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>10</title>
+</head>
+<body>
+    
+    <h4>
+        DOM Manipulation : Changing style using query selector and .onchange function
+    </h4>
+
+
+    
+    <div>
+        <input type="radio" name="r" id="t1"><label>RED</label>
+        <input type="radio" name="r" id="t2"><label>GREEN</label>
+        <input type="radio" name="r" id="t3"><label>BLUE</label>
+
+
+
+        <script>
+            const a = document.querySelector("h4");
+
+            document.querySelector("#t1").onchange = function(){
+                a.style.color = "red";
+            }
+
+            document.querySelector("#t2").onchange = function (){ a.style.color ="green"}
+
+            document.querySelector("#t3").onchange = function (){ a.style.color = "blue"}
+        </script>
+
+    </div>
+</body>
+</html>
