@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29th</title>
+    <link rel="stylesheet" href="./Code29.css">
+</head>
+<body>
+    <table>
+        <caption><h2>Report</h2></caption>
+        <tr>
+            <th>RollNo</th><td><input type="text" id="sna"></td>
+        </tr>
+        <tr>
+            <th><h2>Marks:</h2></th>
+        </tr>
+        <tr>
+            <th>HTML</th><td><input type="text" id="html" maxlength="3"></td>
+        </tr>
+        <tr>
+            <th>CSS</th><td><input type="text" id="css" maxlength="3"></td>
+        </tr>
+        <tr>
+            <th>JavaScript</th><td><input type="text" id="js" maxlength="3"></td>
+        </tr>
+        <tr>
+            <th>BootStrap</th><td><input type="text" id="bs" maxlength="3"></td>
+        </tr>
+        <tr>
+            <th>CSS</th><td><input type="text" id="css" maxlength="3"></td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"> <button onclick="getResult()">Get Result</button> </td>
+          </tr>
+          <tr align="right">
+            <td colspan="2">
+                <output id="total"></output> <bR>
+                <output id="average"></output> <br>
+                <output id="grade"></output> <br>
+            </td>
+          </tr>
+    </table>
+
+    <script>
+        function getResult()
+{
+  let hm,cm,jm,bm,tot,avg,grd;	
+  hm=+html.value;
+  cm=+css.value;
+  jm=+js.value;
+  bm=+bs.value;
+
+  tot=hm+cm+jm+bm;
+  avg=tot/4;
+
+  if(hm>39&&cm>39&&jm>39&&bm>39)
+  {
+	grd = avg>=90? "A+" : avg>=80? "A" : avg>=70? "B+" : avg>=60? "B" :avg>=50? "C" : "D";	
+  } else {
+	  grd="Fail"
+  }
+  total.value='Total Marks	:'+tot;
+  average.value='Average	:'+avg;
+  grade.value='Grade	:'+grd;	
+}
+    </script>
+</body>
+</html>
