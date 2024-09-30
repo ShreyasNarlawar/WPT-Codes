@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+</head>
+<body>
+
+    <input type="button" value="fetch the data" onclick="fetchdata()" >
+
+
+    <script>
+        function fetchdata(){
+            const obj = new XMLHttpRequest();
+
+            obj.open("GET", "https://jsonplaceholder.typicode.com/users");
+
+            obj.send();
+
+            obj.onreadystatechange = ()=>{
+                
+                console.log("state of request is changed", obj.readyState);
+
+                if(readyState == 4 && status === 200){
+                    console.log(obj.responseText);
+                }
+                const b = JSON.parse(obj.responseText);
+                console.log(b);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="i" cellpadding="5" cellspacing ="2">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>phone</th>
+                <th>email</th>
+            </tr>
+        </thead>
+
+        <tbody id="container">
+        </tbody>
+    </table>
+
+    <input type="button" value="fetch" onclick="fetch()">
+
+    <script>
+
+        function fetch(){
+
+            const k = new XMLHttpRequest();
+
+            k.open("GET","https://jsonplaceholder.typicode.com/users");
+
+            k.send();
+
+            k.onreadystatechange = () =>{
+
+                if(k.readyState == 4 && k.status == 200){
+                    console.log(k.responseText);
+
+                    const data = JSON.parse(k.responseText);
+
+                    const container1 = document.getElementById("container");
+
+                    for(i = 0; i < data.length; i++){
+
+                        const row = document.createElement("tr");
+
+                        const idcol = document.createElement("td");
+
+                        const namecol = document.createElement("td");
+
+                        const phonecol = document.createElement("td");
+
+                        const emailcol = document.createElement("td");
+
+                        idcol.innerHTML = data[i].id;
+
+                        namecol.innerHTML = data[i].name;
+
+                        phonecol.innerHTML = data[i].phone;
+
+                        emailcol.innerHTML = data[i].email;
+
+                        row.appendChild(idcol);
+
+                        row.appendChild(namecol);
+
+                        row.appendChild(phonecol);
+
+                        row.appendChild(emailcol);
+
+                        container.appendChild(row);
+
+
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

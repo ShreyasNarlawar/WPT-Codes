@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vaildation 2</title>
+
+    <style>
+        .error-text{
+            color: red;
+        }
+        .password-error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="https://www.google.com" onsubmit="return true">
+
+        <input type="text" placeholder="enter name" id = "name">
+
+        <span id="name-error" class="error-text">name is required</span>
+        <br>
+        <br>
+
+        <input type="password" placeholder="enter password" id="password">
+
+        <span id="password-error" class="password-error">password is required</span>
+        <br>
+        <br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

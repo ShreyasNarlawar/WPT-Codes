@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <style>
+        .error-text{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.google.in" onsubmit="return true">
+        <input type="text" placeholder="Enter Name" id = "name">
+        <span id="name-error"class="error-text">Name Required..!!!</span>
+        <br><br>
+        <input type="password" placeholder="Enter Password" id ="password">
+        <span id="password-error"class="error-text">Password Required..!!!</span>
+        <br><br>
+        <input type="submit" value="Login">    
+    </form>
+</body>
+</html>
