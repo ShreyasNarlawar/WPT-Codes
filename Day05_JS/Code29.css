@@ -1,21 +1,22 @@
 table{
-    background:black;
-    color:white;
+    background:rgb(153, 204, 254);
+    color:rgb(0, 0, 0);
     width:340px;
     margin:auto;
   }
   caption{
-    color:black;
-    text-decoration:2px wavy underline;
+    color:rgb(246, 26, 26);
+    text-decoration:underline;
   }
   input{
     outline:none;
     font-size:18px;
+    color: brown;
   }
   th{
     text-align:right;
     font-size:18px;
   }
   output{
-    color:yellow;
+    color:rgb(19, 242, 26);
     font-size:18px;}

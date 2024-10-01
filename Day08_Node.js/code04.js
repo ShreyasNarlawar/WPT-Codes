@@ -1,22 +1,18 @@
 const http = require("http");
 const PORT = 1300;
-// const myModule=require('./code03.js');
+const myModule=require('./demo.js');
 
 
 const server = http.createServer((request, response) => {
-    var c = 4;
+    var x = 4;
     var y = 6;
     
-    var z = sum(c,y);
+    var z = myModule.sum(x,y);
     
-    response.write(`Sum of ${c} and ${y} is ${z}`);
+    response.write(`Sum of ${x} and ${y} is ${z}`);
     response.end();
 });
 
 server.listen(PORT, () => {
     console.log(`Server is listening on ${PORT}`);
 });
-
-function sum(c, y) {
-  return c + y;
-}
