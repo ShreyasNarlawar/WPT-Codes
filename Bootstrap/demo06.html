@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img width="50px" src="data:image/jpeg;base64,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">
+          <a class="navbar-brand" src="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEEP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" aria-disabled="true">Location</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="5"
+              aria-label="Slide 1"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="d-block w-99"
+                alt="car01"
+              />
+              <h5>First Car</h5>
+              <p>For More Details Contact us on +91-2222277777</p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/22040003/pexels-photo-22040003/free-photo-of-back-of-sports-subaru-wrx.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="d-block w-99"
+                alt="car02"
+              />
+              <h5>Second Car</h5>
+              <p>For More Details Contact us on +91-2222277777</p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/17357690/pexels-photo-17357690/free-photo-of-back-view-of-sports-toyota-ft-86.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="d-block w-99"
+                alt="car03"
+              />
+              <h5>Third Car</h5>
+              <p>For More Details Contact us on +91-2222277777</p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/11191307/pexels-photo-11191307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="d-block w-99"
+                alt="car04"
+              />
+              <h5>Last Second Car</h5>
+              <p>For More Details Contact us on +91-2222277777</p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/10573470/pexels-photo-10573470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="d-block w-99"
+                alt="car05"
+              />
+              <h5>Last Car</h5>
+              <p>For More Details Contact us on +91-2222277777</p>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
