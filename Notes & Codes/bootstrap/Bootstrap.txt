@@ -1,0 +1,429 @@
+Bootstrap is a library to develop responsive webpages.
+==>in bootstrap we will get already defined css and js and we only need to use it.
+==>in css we can use media query to create responsive webpages.
+@max-width(500px)
+{
+	div
+{
+}
+}
+//it will take lots of time.
+======================================================================
+what is grid system?
+==>bootstrap will divide browsers width(any devices) into 12 equal columns and using these 12 colums we will decide how to organize our content.
+==>whenever we are creating any division,we need to specify how many columns this div will occupy.
+
+==========================================
+<html lang="en">
+<head>
+<meta character="utf-8">
+<meta name="viewport" content=width=device-width,initial-scale=1">
+
+available area on browser to display page is called as viewport.
+web page should be equal to size of the width.horizontal scrolling is not good practise.
+=================================================
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+=================================================================
+//if we want to work with grid ,we have to create row,before creating a col,we need to create a row
+by creating 
+<div class="row"> 
+<div class="col">//now create col
+</div>
+</div>
+
+==>Now we need to specify how many columns this 1st and 2nd division will occupy.if not specify it will display equal size.
+==>1 row contains 2 col and these col will display side by side.
+===================================================================================
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="row">
+        <div class="col">
+            <p> In SPA,we always used to follow  component based architecture.i.e we should break down entire page into various components instead of the webpages.
+            ==>component:every UI element which is visible on screen is called as components.its a UI element display on screen.
+            eg:button,table(row,col),image,video,audio,navbar,footer,login form.
+            ==>libraries/framework will provide a cli tool to create a new project i.e create-react-app tool.globally it will install.
+            </p>
+        
+        </div>
+        <div class="col">
+            <p>In SPA,we always used to follow  component based architecture.i.e we should break down entire page into various components instead of the webpages.
+                ==>component:every UI element which is visible on screen is called as components.its a UI element display on screen.
+                eg:button,table(row,col),image,video,audio,navbar,footer,login form.
+                ==>libraries/framework will provide a cli tool to create a new project i.e create-react-app tool.globally it will install.
+            </p>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+==========================================================================
+//first division should occupy 1st 6 col and 2nd division shld occupy 6 col
+//maximum each divison can occupy 12 columns
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="row">
+        <div class="col-12">
+            <p> In SPA,we always used to follow  component based architecture.i.e we should break down entire page into various components instead of the webpages.
+            ==>component:every UI element which is visible on screen is called as components.its a UI element display on screen.
+            eg:button,table(row,col),image,video,audio,navbar,footer,login form.
+            ==>libraries/framework will provide a cli tool to create a new project i.e create-react-app tool.globally it will install.
+            </p>
+        
+        </div>
+        <div class="col-12">
+            <p>In SPA,we always used to follow  component based architecture.i.e we should break down entire page into various components instead of the webpages.
+                ==>component:every UI element which is visible on screen is called as components.its a UI element display on screen.
+                eg:button,table(row,col),image,video,audio,navbar,footer,login form.
+                ==>libraries/framework will provide a cli tool to create a new project i.e create-react-app tool.globally it will install.
+            </p>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+===========================================
+
+<div class="col-lg-6"> // 6 columns should be occupied only on larger screen and if screen is reduced it will occupy entire width of the screen.
+sm
+md
+
+col-n-->1 = 12 it will occupy same no of col on every device
+col-lg-n-->it will occupy n no of col only on large devices.
+mt-
+ml
+mr
+mb
+======================================
+<div class="container">
+
+</div>
+=================================================
+1)Bootstrap- Buttons:
+ Most of the styles in Bootstrap are implemented as class styles.(ie class selectors)
+ We can use these classes directly in our web application to improve look and feel.
+ The following are commonly used classes
+
+1) container class
+2) button related classes
+
+
+Container Class:
+To center our elements we should use container class.
+1) <div class="container">
+2) <h1>This is First Bootstrap Demo</h1>
+3) </div>
+⚽ Button Classes:
+
+How to use Bootstrap Success Style for Our Buttons:
+We have to use btn btn-success
+<button type="button" name="button" class="btn btn-success ">Login</button>
+To make our button as large: btn-lg
+<button type="button" name="button" class="btn btn-success btn-lg ">Login</button>
+===========================================================================
+To make Button as Active:
+We have to use active class
+<button type="button" name="button" class="btn btn-success btn-lg active">
+Login</button>
+
+
+To make Button as disabled:
+<button type="button" name="button" class="btn btn-success"
+disabled="disabled">Login</button>
+
+
+===================================================================================
+Express js
+
+its a framework that will provide predefined modules,functions,classes and properties using express js wecan make our server development a bit more easy.
+
+const http=require('http');
+const server=http.createserver(req,res)
+{
+res.write("res");
+res.end();
+);
+server.listen(6700);
+
+createserver is the only function that accept each and every req and gives response.
+but in real time scenario our application need to deal with n number of url.
+12.0.0.1:6700 //base url
+12.0.0.1:6700 /login
+100 of url we can write
+ whenever u will send request to base url then also function will execute.if we pass request to/login url then also this function will get execute.
+
+==>function  should send different response for each url then how it will be possible by 1 function.
+==>we have to check requested url everytime in javascript and validate with the stored url
+=============================================
+create foldername as express, right click on folder, open in terminal
+cmd
+cd express
+
+create pakage.json  ==>npm init
+open project in vs
+create index.js file
+//install express ==>npm install express
+open terminal
+npm install express
+=====================================
+import statement:
+note:require() has become old approach ,now the new approachis import statement given by jsx
+
+const fs=require('fs');
+fs.writfile();
+
+import {functions} from 'module';
+===========================================================
+==>for getting started with express js:
+==>instead of creating server, we will create
+create express application that will be eqivalent to server
+
+step 1: 
+import {funct1,funct2} from 'module';//import only specific function
+import express from 'express'; // ==  const express=require('express); 
+
+step 2:use ref to call fun
+const app=express();//express() will create an express application/server
+
+step 3:
+app.listen(portno);
+===========================================================
+import express from 'express';
+const app=express();
+app.listen(7500,()=>{
+
+console.log("server has started")
+
+});
+node index.js
+
+===================================================================
+we have different url's 
+127.0.0.1:7500 use GET-->welcome to express app
+127.0.0.1:7500/login//welcome to login
+127.0.0.1:7500/signup//welcome to signup
+
+our express app should have this url.and on each url server should send different response
+
+==>in express each url is going to have its seperate function to handle req and response
+const app=express(); //we need to know url and method
+app.get(url,callback) //get() for GET METHOD
+==================
+app.get("/",(req,res)=>{
+
+);
+
+=======================
+app.get("/login",(req,res)=>{
+
+});
+
+
+======================
+import express from 'express';
+const app=express();
+app.get("/",(req,res)=>{
+res.send("welcome to express app");
+});
+app.get("/login",(req,res)=>{
+res.send("welcome to login");
+});
+app.listen(7500,()=>{
+
+console.log("server has started")
+
+});
+
+start server node index.js
+http://127.0.0.1:7500/login
+-===================================
+============================
+React Forms are the components used to collect and manage the user inputs. These components includes the input elements like text field, check box, date input, dropdowns etc.
+
+In HTML forms the data is usually handled by the DOM itself but in the case of React Forms data is handled by the react components.
+
+
+
+Controlled Components
+In simple HTML elements like input tags, the value of the input field is changed whenever the user type. But, In React, whatever the value the user types we save it in state and pass the same value to the input tag as its value, so here DOM does not change its value, it is controlled by react state. These are known as Controlled Components.
+
+
+program1 Example: This example displays the text input value on the console window when the React onChange event triggers.
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+ 
+class App extends React.Component {
+   
+    onInputChange(event) {
+        console.log(event.target.value);
+    }
+   
+    render() {
+        return (
+            <div>
+                <form>
+                    <label>Enter text</label>
+                    <input type="text"
+                        onChange={this.onInputChange}/>
+                </form>
+            </div>
+        );
+    }
+}
+==================================================================
+Handling React Forms
+In HTML the HTML DOM handles the input data but in react the values are stored in state variable and form data is handled by the components.
+
+Example: This example shows updating the value of inputValue each time user changes the value in the input field by calling the setState() function.
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class App extends React.Component {
+
+    state = { inputValue: '' };
+
+    render() {
+        return (
+            <div>
+                <form>
+                    <label> Enter text </label>
+                    <input type="text"
+                        value={this.state.inputValue}
+                        onChange={(e) => this.setState(
+                            { inputValue: e.target.value })} />
+                </form>
+                <br />
+                <div>
+                    Entered Value: {this.state.inputValue}
+                </div>
+            </div>
+        );
+    }
+}
+
+
+The .map() method allows you to run a function on each item in the array, returning a new array as the result.
+
+import { useState } from "react";
+import ReactDOM from "react-dom/client";
+
+function MyForm() {
+  const [myCar, setMyCar] = useState("Volvo");
+
+  const handleChange = (event) => {
+    setMyCar(event.target.value)
+  }
+
+  return (
+    <form>
+      <select value={myCar} onChange={handleChange}>
+        <option value="Ford">Ford</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Fiat">Fiat</option>
+      </select>
+    </form>
+  )
+}
+============================
+Here's a simple example of a React form with an input field for a user's name and a submit button:
+import React, { useState } from 'react';
+
+function MyForm() {
+const [name, setName] = useState('');
+
+const handleSubmit = (event) => {
+event.preventDefault();
+alert(`The name you entered was: ${name}`);
+};
+
+return (
+<form onSubmit={handleSubmit}>
+<label>
+Enter your name:
+<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+</label>
+<input type="submit" />
+</form>
+);
+}
+====================================================
+Redux:
+Redux is a state management library used in React applications to manage global state by providing a single source of truth for the entire application. It helps manage complex state changes and interactions between components.
+
+Key Concepts:
+
+1.⁠ ⁠Store: The central location that holds the entire state of the application.
+2.⁠ ⁠Actions: Payloads sent to the store to trigger state changes.
+3.⁠ ⁠Reducers: Pure functions that handle actions and update the state.
+4.⁠ ⁠Dispatch: Sends actions to the reducer to update the state.
+
+How Redux Works:
+
+1.⁠ ⁠Components dispatch actions.
+2.⁠ ⁠Reducers receive actions and update the state.
+3.⁠ ⁠The store notifies components of state changes.
+4.⁠ ⁠Components re-render with the updated state.
+
+Benefits:
+
+1.⁠ ⁠Predictable state changes
+2.⁠ ⁠Easy debugging
+3.⁠ ⁠Scalability
+4.⁠ ⁠Decoupling components from state management
+
+Commonly Used with:
+
+1.⁠ ⁠React Hooks (e.g., ⁠ useDispatch ⁠, ⁠ useSelector ⁠)
+2.⁠ ⁠Middleware (e.g., Redux Thunk, 
