@@ -22,12 +22,17 @@
                 
                 console.log("state of request is changed", obj.readyState);
 
-                if(readyState == 4 && status === 200){
+                if(obj.readyState == 4 && obj.status === 200){
                     console.log(obj.responseText);
+                        try {
+                            const b = JSON.parse(obj.responseText);
+                            console.log(b);
+                        } catch (e) {
+                            console.error("Error parsing JSON:", e);
+                        }
+                    } else
+                        console.error("Request failed with status:", obj.status);
                 }
-                const b = JSON.parse(obj.responseText);
-                console.log(b);
-            }
         }
     </script>
 </body>
